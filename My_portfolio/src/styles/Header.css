@@ -1,0 +1,8 @@
+.header_Hide {
+    transform: translateY(-116px);
+    box-shadow: none;
+  }
+  .header{
+   
+    transition: transform 0.3s;
+  }

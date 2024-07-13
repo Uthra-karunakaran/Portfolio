@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root{
+  @apply flex flex-col p-3 
+}
+.hero-content {
+  
+}
+
+.header_shadow{
+  box-shadow: rgba(37, 39, 89, .08) 0px 8px 8px 0;;
+}
+
+.btn_shadow{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.footer {
+  position: fixed;
+  bottom: -100px; 
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, bottom 0.3s ease-in-out;
+}
+
+
+
+.footer.hidden {
+  bottom: -100px;
+  transform: translateY(100%);
+}
+
+.footer.visible {
+  bottom: 0;
+  transform: translateY(0);
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.prj_block {
+  min-height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  align-items: center;
+  
+} 
+.prj_block{
+  @apply  min-h-fit md:pb-16 lg:pb-20 grid-cols-1 lg:grid-cols-2 gap-8 md:p-6 lg:p-8 items-center border-b-4 border-gray-600 border-solid ;
+}
+.techstack{
+  @apply text-lg font-normal  bg-neutral-900 text-offwhite flex justify-center items-center content-center w-fit px-3.5 py-2 rounded-full mx-8
+}
+.prjlink{
+  @apply inline-flex w-fit items-center justify-center px-5 py-3 text-lg font-medium text-black rounded-lg bg-gray-50  hover:text-ruby hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white
+}
+.linkShadow{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.imgShadow{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
